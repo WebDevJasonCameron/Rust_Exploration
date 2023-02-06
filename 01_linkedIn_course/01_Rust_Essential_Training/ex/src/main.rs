@@ -89,7 +89,22 @@ fn main() {
  */
 
 // Ex 08
+/*
 fn main() {
     let letter = 'a';
     let number = '1';
+    let finger = '\u{261d}';
+    println!("{letter}\n{number}\n{finger}")
+}
+ */
+
+// Challange
+fn main() {
+    let a = 13.0;
+    let b = 2.3;
+    let c: f64 = 120.0;
+    let average: f64 = (a as f64 + b as f64 + c as f64) / 3.0;
+
+    assert_eq!(average, 45.1);
+    println!("Test passed!");
 }
