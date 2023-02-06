@@ -140,6 +140,7 @@ fn main() {
 */
 
 // Ex 11 Tuple
+/*
 fn main() {
     let mut stuff: (u8, f32, char) = (10, 3.14, 'x'); // don't need to use the colon and assignments
     stuff.0 += 3;
@@ -148,4 +149,28 @@ fn main() {
 
     let (a, b, c) = stuff;
     println!("b is {b}");
+}
+*/
+
+// Ex 12 Functions
+fn main() {
+    say_hello();
+    say_number(13);
+    let x = 1;
+    let y = 2;
+    say_the_sum(x, y);
+    say_number(x as i32);
+}
+
+fn say_hello() {
+    println!("Hello!");
+}
+
+fn say_number(number: i32) {
+    println!("numbers is {number}");
+}
+
+fn say_the_sum(a: u8, b: u8) {
+    let sum = a + b;
+    println!("sum is {sum}");
 }
