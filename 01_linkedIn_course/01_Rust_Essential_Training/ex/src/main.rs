@@ -153,6 +153,7 @@ fn main() {
 */
 
 // Ex 12 Functions
+/*
 fn main() {
     say_hello();
     say_number(13);
@@ -173,4 +174,82 @@ fn say_number(number: i32) {
 fn say_the_sum(a: u8, b: u8) {
     let sum = a + b;
     println!("sum is {sum}");
+}
+
+*/
+
+// Ex 12
+/*
+fn main() {
+    let result = square(13);
+    println!("result is {:?}", result);
+    println!("result is {} and {}", result.0, result.1);
+}
+
+fn square(x: i32) -> (i32, i32) {
+    println!("squaring {x}");
+    return (x, x * x);
+}
+*/
+
+// Challenge
+/*
+fn main() {
+    let celsius_temp = 23.0;
+    let fahrenheit_temp = clesius_to_fahrenheit(celsius_temp);
+
+    assert_eq!(fahrenheit_temp, 73.4);
+    println!("Test passed!")
+}
+
+fn clesius_to_fahrenheit(temp: f64) -> f64 {
+    temp * 1.8 + 32.0
+}
+*/
+
+// Ex 13
+/*
+fn main() {
+    let x = 4;
+
+    if x + 1 != 3 {
+        println!("x + 1 is NOT 3!")
+    }
+
+    let a = 3;
+    let b = 5;
+
+    if a > b {
+        println!("a is greater than b");
+    } else {
+        if a < b {
+            println!("a is less than b");
+        } else {
+            println!("a is equal to b");
+        }
+    }
+
+    if a > b {
+        println!("a is greater than b");
+    } else if a < b {
+        println!("a is less than b");
+    } else {
+        println!("a is equal to b");
+    }
+}
+ */
+
+// Ex 14    If statements cont
+fn main() {
+    let make_x_odd = true;
+    let x = if make_x_odd { 1 } else { 2 };
+
+    /*
+    if make_x_odd {
+        x = 1;
+    } else {
+        x = 2;
+    } */
+
+    println!("x is {x}");
 }
