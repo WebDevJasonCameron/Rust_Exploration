@@ -99,6 +99,7 @@ fn main() {
  */
 
 // Challange
+/*
 fn main() {
     let a = 13.0;
     let b = 2.3;
@@ -107,4 +108,44 @@ fn main() {
 
     assert_eq!(average, 45.1);
     println!("Test passed!");
+}
+*/
+
+// Ex 09
+/*
+fn main() {
+    let mut letters = ['a', 'b', 'c'];
+    letters[0] = 'x';
+    let first_letter = letters[0];
+    println!("first_letter is {first_letter}");
+
+    let numbers: [i32; 5];
+    numbers = [0; 5];
+    let index: usize = numbers.len();
+    println!("last number is {}", numbers[index]);
+}
+*/
+
+// Ex 10  Arrays
+/*
+fn main() {
+    let parking_lot = [[1, 2, 3], [4, 5, 6]];
+
+    let number = parking_lot[0][1];
+
+    println!("number is {number}")
+
+    let garage = [[[0; 100]; 20]; 5];
+}
+*/
+
+// Ex 11 Tuple
+fn main() {
+    let mut stuff: (u8, f32, char) = (10, 3.14, 'x'); // don't need to use the colon and assignments
+    stuff.0 += 3;
+    let first_item = stuff.0;
+    println!("first_item is {first_item}");
+
+    let (a, b, c) = stuff;
+    println!("b is {b}");
 }
