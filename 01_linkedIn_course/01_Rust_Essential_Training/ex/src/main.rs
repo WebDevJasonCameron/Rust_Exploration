@@ -240,6 +240,7 @@ fn main() {
  */
 
 // Ex 14    If statements cont
+/*
 fn main() {
     let make_x_odd = true;
     let x = if make_x_odd { 1 } else { 2 };
@@ -252,4 +253,45 @@ fn main() {
     } */
 
     println!("x is {x}");
+}
+*/
+
+// Ex 15     loops
+
+/*
+fn main() {
+    let mut count = 0;
+
+    let result = loop {
+        if count >= 10 {
+            break count * 10;
+        }
+        count += 1;
+        println!("count is {count}")
+    };
+
+    println!("The result is {result}")
+}
+ */
+
+// while loop
+/*
+fn main() {
+    let mut count = 0;
+    let letters = ['a', 'b', 'c'];
+
+    while count < letters.len() {
+        println!("letter is {}", letters[count]);
+        count += 1;
+    }
+}
+*/
+
+// for loop
+fn main() {
+    let message = ['h', 'e', 'l', 'l', 'o'];
+
+    for item in message {
+        println!("item is {item}")
+    }
 }
