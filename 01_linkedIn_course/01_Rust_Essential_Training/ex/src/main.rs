@@ -288,10 +288,73 @@ fn main() {
 */
 
 // for loop
+/*
 fn main() {
     let message = ['h', 'e', 'l', 'l', 'o'];
 
     for item in message {
         println!("item is {item}")
     }
+
+    let message2 = ['h', 'e', 'l', 'l', 'o'];
+
+    for (index, &item) in message2.iter().enumerate() {
+        println!("item is {item}, and index is {index}");
+        if item == 'e' {
+            break;
+        }
+    }
+
+    for number in 0..5 {
+        println!("number is {number}");
+    }
+}
+*/
+
+// Ex 16   loops inside loops
+/*
+fn main() {
+    let mut matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+    for row in matrix.iter_mut() {
+        for num in row.iter_mut() {
+            *num += 10;
+            print!("{num}\t");
+        }
+        println!();
+    }
+}
+*/
+
+// Challenge
+fn main() {
+    let numbers = [1, 9, -2, 0, 23, 20, -7, 13, 37, 20, 56, -18, 20, 3];
+    let mut max: i32;
+    let mut min: i32;
+    let mut mean: f64;
+
+    max = numbers[0];
+    min = numbers[0];
+    mean = 0.0;
+
+    /* My Code */
+    for num in numbers {
+        if num > max {
+            max = num;
+        } else if num < min {
+            min = num;
+        }
+        mean += num as f64;
+    }
+
+    mean /= numbers.len() as f64;
+
+    println!("max is {max}");
+    println!("min is {min}");
+    println!("mean is {mean}");
+
+    /*assert_eq!(max, 56);
+    assert_eq!(min, -18);
+    assert_eq!(mean, 12.5);
+    */
 }
