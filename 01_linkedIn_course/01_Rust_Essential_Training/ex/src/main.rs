@@ -327,6 +327,7 @@ fn main() {
 */
 
 // Challenge
+/*
 fn main() {
     let numbers = [1, 9, -2, 0, 23, 20, -7, 13, 37, 20, 56, -18, 20, 3];
     let mut max: i32;
@@ -358,3 +359,26 @@ fn main() {
     assert_eq!(mean, 12.5);
     */
 }
+*/
+
+// Ex 17        Scope
+/*
+fn main() {
+
+    let planet = "Earth";
+    if true {
+        println!("planet is {planet}");
+    }
+    println!("planet is {planet}");
+
+
+    // Shadowing a var
+
+    let planet = "Earth";
+    println!("planet is {planet}");
+    let planet = "Mars";
+    println!("planet is {planet}");
+
+}
+ */
+fn main() {}
