@@ -381,9 +381,37 @@ fn main() {
 
 }
  */
+
+/*
 fn main() {
     let mut message = String::from("Earth");
     println!("message is {message}");
     message.push_str(" is home");
     println!("message {message}");
+}
+*/
+/*
+fn main() {
+    let outer_planet: String;
+    {
+        let mut inner_planet = String::from("mercury");
+        println!("inner_planet is {inner_planet}");
+        outer_planet = inner_planet.clone();
+        inner_planet.clear();
+        println!("again inner_planet is {inner_planet}");
+    }
+    println!("inner_planet is {outer_planet}");
+}
+*/
+
+fn main() {
+    let rocket_fuel = String::from("RP-1");
+    let rocket_fuel = process_fuel(rocket_fuel);
+    println!("rocket_fuel is {rocket_fuel}");
+}
+
+fn process_fuel(propellant: String) -> String {
+    println!("processing propellant {propellant}...");
+    let new_fuel = String::from("LNG");
+    new_fuel
 }
