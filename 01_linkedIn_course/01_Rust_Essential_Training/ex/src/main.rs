@@ -403,15 +403,29 @@ fn main() {
     println!("inner_planet is {outer_planet}");
 }
 */
-
+/*
 fn main() {
     let rocket_fuel = String::from("RP-1");
-    let rocket_fuel = process_fuel(rocket_fuel);
-    println!("rocket_fuel is {rocket_fuel}");
+    let (rocket_fuel, length) = process_fuel(rocket_fuel);
+    println!("rocket_fuel is {rocket_fuel} and length is {length}");
 }
 
-fn process_fuel(propellant: String) -> String {
+fn process_fuel(propellant: String) -> (String, usize) {
     println!("processing propellant {propellant}...");
     let new_fuel = String::from("LNG");
-    new_fuel
+    let length = new_fuel.len();
+    (new_fuel, length)
+}
+*/
+fn main() {
+    let mut rocket_fuel = String::from("RP-1");
+    let length = process_fuel(&mut rocket_fuel);
+    println!("rocket_fuel is {rocket_fuel} and length is {length}");
+}
+
+fn process_fuel(propellant: &mut String) -> usize {
+    println!("processing propellant {propellant}...");
+    propellant.push_str(" is highly flammable!");
+    let length = propellant.len();
+    length
 }
