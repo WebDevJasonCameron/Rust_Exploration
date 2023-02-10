@@ -417,6 +417,7 @@ fn process_fuel(propellant: String) -> (String, usize) {
     (new_fuel, length)
 }
 */
+/*
 fn main() {
     let mut rocket_fuel = String::from("RP-1");
     let length = process_fuel(&mut rocket_fuel);
@@ -428,4 +429,14 @@ fn process_fuel(propellant: &mut String) -> usize {
     propellant.push_str(" is highly flammable!");
     let length = propellant.len();
     length
+}
+ */
+fn main() {
+    let rocket_fuel = produce_fuel();
+    println!("rocket_fuel is {rocket_fuel}");
+}
+
+fn produce_fuel() -> String {
+    let new_fuel = String::from("PR-1");
+    new_fuel
 }
