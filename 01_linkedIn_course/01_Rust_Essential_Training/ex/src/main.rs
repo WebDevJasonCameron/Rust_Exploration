@@ -448,10 +448,10 @@ fn main() {
     let message = String::from("Greetings from Earth!");
     println!("message is {message}");
 
-    let last_word = &message[15..15 + 5];
+    let last_word = &message[15..20];
     println!("last_word is {last_word}");
 
-    let plantes = [1,2,3,4,5,6,7,8]; 
-    let inner_planet: &[i32] = %planet[..4];
-    print!("inner_planets are {:?}", inner_planets)
+    let plantes = [1, 2, 3, 4, 5, 6, 7, 8];
+    let inner_planet: &[i32] = &plantes[..4];
+    print!("inner_planet are {inner_planet:?}")
 }
