@@ -431,6 +431,7 @@ fn process_fuel(propellant: &mut String) -> usize {
     length
 }
  */
+/*
 fn main() {
     let rocket_fuel = produce_fuel();
     println!("rocket_fuel is {rocket_fuel}");
@@ -439,4 +440,18 @@ fn main() {
 fn produce_fuel() -> String {
     let new_fuel = String::from("PR-1");
     new_fuel
+}
+ */
+
+// Ex       -- Slice
+fn main() {
+    let message = String::from("Greetings from Earth!");
+    println!("message is {message}");
+
+    let last_word = &message[15..15 + 5];
+    println!("last_word is {last_word}");
+
+    let plantes = [1,2,3,4,5,6,7,8]; 
+    let inner_planet: &[i32] = %planet[..4];
+    print!("inner_planets are {:?}", inner_planets)
 }
