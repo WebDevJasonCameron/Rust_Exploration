@@ -444,6 +444,7 @@ fn produce_fuel() -> String {
  */
 
 // Ex       -- Slice
+/*
 fn main() {
     let message = String::from("Greetings from Earth!");
     println!("message is {message}");
@@ -454,4 +455,23 @@ fn main() {
     let plantes = [1, 2, 3, 4, 5, 6, 7, 8];
     let inner_planet: &[i32] = &plantes[..4];
     print!("inner_planet are {inner_planet:?}")
+}
+*/
+fn main() {
+    let message = String::from("Greetings from Earth!");
+    let first_word = get_first_word(&message);
+    println!("first_word is {first_word}");
+}
+
+fn get_first_word(s: &str) -> &str {
+    // &str is a String Slice (different)
+    let bytes = s.as_bytes();
+
+    for (index, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[..index]; // found a space
+        }
+    }
+
+    &s // no spaces found; input is a single word
 }
