@@ -457,6 +457,7 @@ fn main() {
     print!("inner_planet are {inner_planet:?}")
 }
 */
+/*
 fn main() {
     let message = String::from("Greetings from Earth!");
     let first_word = get_first_word(&message);
@@ -474,4 +475,29 @@ fn get_first_word(s: &str) -> &str {
     }
 
     &s // no spaces found; input is a single word
+}
+*/
+
+// Challenge     Trim "white spaces" from front and end
+fn main() {}
+
+fn trim_spaces(s: &str) -> &str {
+    // locate the first non-space character
+    let mut start = 0;
+    for (index, character) in s.chars().enumerate() {
+        if character != ' ' {
+            start = index;
+            break;
+        }
+    }
+
+    let mut end = 0;
+    for (index, character) in s.char().rev().enumerate() {
+        if character != ' ' {
+            end = s.len() - index;
+            break;
+        }
+    }
+
+    &s[start..end]
 }
