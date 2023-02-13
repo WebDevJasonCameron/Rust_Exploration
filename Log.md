@@ -12,3 +12,4 @@ Sometimes I get tired of learning concepts and just want to build. Afterall, you
 - [Crate ureq](https://docs.rs/ureq/latest/ureq/)
 - [Serde JSON](https://docs.rs/crate/serde_json/latest)
 - [Colour](https://docs.rs/colour/latest/colour/)
+- Bacon is also installed in the proj `cargo install bacon` <- This is awsome, as it tells us something is wrong before needing to run the program!
