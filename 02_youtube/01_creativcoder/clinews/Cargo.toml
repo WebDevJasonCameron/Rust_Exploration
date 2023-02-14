@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 colour = "0.6.0"
 newsapi = {path = "./newsapi"}
+thiserror = "1.0.38"
 
