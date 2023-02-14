@@ -11,8 +11,8 @@ fn render_articles(articles: &Articles) {
 
 fn main() -> Result<(), Box<dyn Error>> {
     let url: &str =
-        "https://newsapi.org/v2/everything?q=Apple&from=2023-02-12&sortBy=popularity&apiKey=";
-    let articles = get_articles(url)?;
+        "https://newsapi.org/v2/everything?q=Apple&from=2023-02-12&sortBy=popularity&apiKey=c139e228fbab444fa4c7e51dff57e67e";
+    let articles: Articles = get_articles(url)?;
 
     render_articles(&articles);
 
