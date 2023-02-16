@@ -479,6 +479,7 @@ fn get_first_word(s: &str) -> &str {
 */
 
 // Challenge     Trim "white spaces" from front and end
+/*
 fn main() {}
 
 fn trim_spaces(s: &str) -> &str {
@@ -501,3 +502,20 @@ fn trim_spaces(s: &str) -> &str {
 
     &s[start..end]
 }
+ */
+
+// io
+/*
+use std::io;
+fn main() {
+    let mut buffer = String::new();
+    println!("Enter a message: ");
+    io::stdin().read_line(&mut buffer);
+    println!("buffer is {buffer}");
+
+    let mut number: i32 = buffer.trim().parse().unwrap();
+    println!("number + 1 is {}", number + 1);
+}
+*/
+
+// Crate
