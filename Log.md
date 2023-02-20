@@ -1,5 +1,9 @@
 # Log
 
+## 2023 02 19 | Taxes...
+
+Wish I could just just build a bot that did my taxes for me.
+
 ## 2023 02 12 | YT Project
 
 Sometimes I get tired of learning concepts and just want to build. Afterall, you need a wall to post ideas on... that is what a project is form me. It is a place were I can take the many concept building blocks and see them function. Otherwise, I find everything is just scattered around in my brain and I'll never remember how they work. That's why I'm going to take a "breif" moment to run through some YT projects: [Getting started with Rust programming language 🦀 2021: 4. Building a CLI app in Rust](https://www.youtube.com/watch?v=4km2UijVC3M&t=70s), by creativcoder. Here are the resources we are using:
